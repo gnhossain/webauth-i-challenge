@@ -19,7 +19,7 @@ const Login = () => {
         const newLogin = {
             ...changes,
         }
-        axios.post(`http://localhost, newLogin`)
+        axios.post(`http://localhost:5005/api/auth/login`,newLogin)
         .then(res => console.log(res))
     }
 

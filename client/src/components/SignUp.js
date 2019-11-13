@@ -20,7 +20,7 @@ const SignUp = () => {
             ...changes,
         }
 
-        axios.post(`http:`, newLogin)
+        axios.post(`http://localhost:5005/api/auth/register`, newLogin)
         .then(res => console.log(res))
     }
 
